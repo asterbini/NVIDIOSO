@@ -15,6 +15,7 @@
 
 class InDomainRandom : public ValueChoiceMetric {
 public:
+	using ValueChoiceMetric::metric_value;
   InDomainRandom ();
   
   /**

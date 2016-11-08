@@ -72,10 +72,10 @@ public:
   virtual ~Domain ();
   
   //! Constants for int min/max domain bounds
-  static constexpr int MIN_DOMAIN () { return INT32_MIN; }
+  static int MIN_DOMAIN () { return INT32_MIN; }
   
   //! Constants for int min/max domain bounds
-  static constexpr int MAX_DOMAIN () { return INT32_MAX; }
+  static int MAX_DOMAIN () { return INT32_MAX; }
   
   /**
    * Set domain's type (use get_type to get the type).

@@ -32,13 +32,13 @@ protected:
    *  | EVT | REP | LB | UB | DSZ || ... BIT ... |.
    * See system_description.h.
    */
-  static constexpr int EVT_IDX () { return 0; }
-  static constexpr int REP_IDX () { return 1; }
-  static constexpr int  LB_IDX () { return 2; }
-  static constexpr int  UB_IDX () { return 3; }
-  static constexpr int DSZ_IDX () { return 4; }
-  static constexpr int BIT_IDX () { return 5; }
   
+  static int EVT_IDX () { return 0; }
+  static int REP_IDX () { return 1; }
+  static int  LB_IDX () { return 2; }
+  static int  UB_IDX () { return 3; }
+  static int DSZ_IDX () { return 4; }
+  static int BIT_IDX () { return 5; }
   /**
    * Macro to use for declaring the
    * size of a byte in terms of bits.
@@ -81,7 +81,7 @@ protected:
    * @param max lower bound used to calculated the index of the bitmap
    * @return number of int used as bitmaps to represent max
    */
-  static constexpr int IDX_CHUNK ( int val ) {
+  static int IDX_CHUNK ( int val ) {
     return val / ( sizeof ( int ) * BITS_IN_BYTE );
   }
   /**
@@ -90,7 +90,7 @@ protected:
    * @param max lower bound used to calculated the index of the bitmap
    * @return number of int used as bitmaps to represent max
    */
-  static constexpr int IDX_BIT ( int val ) {
+  static int IDX_BIT ( int val ) {
     return val % ( sizeof ( int ) * BITS_IN_BYTE );
   }
   

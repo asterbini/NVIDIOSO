@@ -3,7 +3,7 @@
 # Please, check the technical specifications of the GPU 
 # in order to set the proper compute capability supported 
 # by the GPU model in use.
-export CUDA_CAPABILITY=30
+export CUDA_CAPABILITY=52
 
 # GLOBAL INSTALLATION PATH
 # By default iNVIDIOSO is installed in 
@@ -14,7 +14,8 @@ export INSTALL_PATH=bin
 
 # GLOBAL PATH TO COMPILER FOR OSX ENVIRONMENT
 # No need to change if using a different environment
-export OSX_COMPILER=/usr/local/Cellar/gcc47/4.7.4/bin/g++-4.7
+#export OSX_COMPILER=/usr/local/Cellar/gcc47/4.7.4/bin/g++-4.7
+export OSX_COMPILER=/opt/gcc-5.3.0/bin/g++
 
 # GLOBAL PATH TO NVCC COMPILER
 # If nvcc is set in global path, no need to change

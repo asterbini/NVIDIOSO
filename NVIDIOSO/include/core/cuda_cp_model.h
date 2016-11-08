@@ -145,13 +145,13 @@ public:
   std::unordered_map< size_t, size_t > constraint_mapping_h_d;
   
   //! Get function for domain states
-  uint * const get_dev_domain_states_ptr () const;
+  uint * get_dev_domain_states_ptr () const;
   
   //! Get function for domain states indeces
-  int * const get_dev_domain_index_ptr () const;
+  int * get_dev_domain_index_ptr () const;
   
   //! Get function for auxiliary states
-  uint * const get_dev_domain_states_aux_ptr () const;
+  uint * get_dev_domain_states_aux_ptr () const;
 
   /**
    * Converts the ids of the variables on the host

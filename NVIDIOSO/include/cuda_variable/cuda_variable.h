@@ -16,6 +16,7 @@
 
 class CudaVariable : public IntVariable {
 public:
+	using BacktrackableObject::set_state;
   /**
    * Base constructor: create a variable with new id.
    * The id is given by a global id generator.

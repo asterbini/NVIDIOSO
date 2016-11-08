@@ -15,6 +15,7 @@
 
 class InDomainMin : public ValueChoiceMetric {
 public:
+	using ValueChoiceMetric::metric_value;
   InDomainMin ();
   
   /**

@@ -40,7 +40,7 @@ echo "=====================================================================" >> 
 echo "Architecture: $ARCHITECTURE_ALL" >> $FILELOG
 echo "=====================================================================" >> $FILELOG
 
-if [ $1 != "" ]; then
+if [ "$1" != "" ]; then
   valgrind --leak-check=yes -v ./invidioso -v -t $1 1>>$FILELOG  2>&1 &
 else
   valgrind --leak-check=yes -v ./invidioso -v 1>>$FILELOG  2>&1 &

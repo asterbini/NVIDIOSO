@@ -15,6 +15,7 @@
 
 class InDomainMedian : public ValueChoiceMetric {
 public:
+	using ValueChoiceMetric::metric_value;
   InDomainMedian ();
   
   /**

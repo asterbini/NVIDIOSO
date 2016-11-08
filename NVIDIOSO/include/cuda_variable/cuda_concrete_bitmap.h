@@ -51,7 +51,7 @@ protected:
    * @param val is the (integer) value for which the chunk is needed
    * @return number of int used as bitmaps to represent max
    */
-  static constexpr int IDX_CHUNK ( int val ) {
+  static int IDX_CHUNK ( int val ) {
     return val / ( sizeof ( int ) * BITS_IN_BYTE );
   }
   
@@ -63,7 +63,7 @@ protected:
    *        within a chunk of bits
    * @return position (starting from 0) of the bit corresponding to val.
    */
-  static constexpr int IDX_BIT ( int val ) {
+  static int IDX_BIT ( int val ) {
     return val % BITS_IN_CHUNK;
   }
   
@@ -73,7 +73,7 @@ protected:
    *        represent as bitmap.
    * @return number of chunks needed to represent size valus.
    */
-  static constexpr int NUM_CHUNKS ( int size ) {
+  static int NUM_CHUNKS ( int size ) {
     return size % BITS_IN_CHUNK == 0 ?
     (size / BITS_IN_CHUNK == 0 ? 1 : size / BITS_IN_CHUNK) :
     (size / BITS_IN_CHUNK + 1);

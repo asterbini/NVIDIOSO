@@ -19,6 +19,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <random>
+#include <chrono> //AS
 
 #if GCC4
 #define nullptr NULL

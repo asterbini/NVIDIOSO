@@ -146,7 +146,8 @@ SolverConfigManager::load_scheme ( std::string json_scheme_path )
 	}
 	else
 	{// If empty input string, use internal path
-		json_config_file = _json_scheme_file;
+		//json_config_file = _json_scheme_file;
+		json_config_file = "config/config_scheme.json";
 	}
 
 	std::string line{};
@@ -233,7 +234,8 @@ SolverConfigManager::set_config_file_path ( std::string config_path )
 void 
 SolverConfigManager::load_configurations ( std::string config_path )
 {
-  std::string file_to_open = _params_data_file;
+  //AS std::string file_to_open = _params_data_file;
+  std::string file_to_open = "config/iNVIDIOSO.params";
   if ( config_path != "" )
     file_to_open = config_path;
   
